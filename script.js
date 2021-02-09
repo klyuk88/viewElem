@@ -18,3 +18,7 @@ function viewOnScroll(element) {
 
 console.log(window.pageYOffset + rectElem.top) //расстояние от верхеней границы документа до верхней границы элемента. window.pageYOffset - расстояние от верхней границы окна до верхней границы элемента. rectElem.top - рассояние от верхней границы элемента до верхней границы окна
 
+
+
+
+
