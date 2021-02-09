@@ -4,8 +4,11 @@ function viewOnScroll(element) {
         window.addEventListener('scroll', () => {
             elements.forEach(item => {
                 const rectElem = item.getBoundingClientRect()
-                if (rectElem.top < windowH) {
+                if (rectElem.top < windowH) { //в зоне видимости по верхней границе
                     console.log('Hello, i am element');
+                }
+                if ((rectElem.top + rectElem.height) < 0) { //вне зоны видимости по нижней границе
+                     console.log('By');
                 }
             })
         })
